@@ -14,6 +14,7 @@ This repository tracks my progress through the Hyperskill curriculum. Each subfo
 | [Zookeeper](zookeeper/Zookeeper.java)                           | Java Basics | Java     | Completed | Prints ASCII animal habitats by number using text blocks and a Scanner-driven input loop                      |
 | [Pencil Game](pencil-game/PencilGame.java)                      | Java Basics | Java     | Completed | Two-player pencil-taking game against a computer opponent that plays an unbeatable strategy, with input validation |
 | [Cinema Room Manager](cinema-room-manager/CinemaRoomManager.java) | Java Basics | Java     | Completed | Interactive seat-booking console app with a seat map, tiered ticket pricing, and purchase statistics          |
+| [Coffee Machine](coffee-machine/CoffeeMachine.java)             | Java Basics | Java     | Completed | Simulates a coffee machine's resource management (water, milk, beans, cups, money) with buy/fill/take/clean actions and a self-cleaning threshold |
 
 **Status legend:** Not Started, In Progress, Completed
 
@@ -31,6 +32,8 @@ hyperskill-projects/
     PencilGame.java
   cinema-room-manager/
     CinemaRoomManager.java
+  coffee-machine/
+    CoffeeMachine.java
   README.md
 ```
 
