@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Cinema {
+public class CinemaRoomManager {
 
     public static void main(String[] args) {
         CinemaRoom cinemaRoom = CinemaRoom.createCinemaRoom();
