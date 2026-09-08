@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class PencilGame {
     enum Players {
         JACK("Jack"), JOHN("John");
 
@@ -23,16 +23,16 @@ public class Main {
         GamePrinter.askPlayerTurn(scanner);
 
         do {
-            PencilGame.printPencilList();
-            PencilGame.printCurrentTurn();
-            PencilGame.updatePencilCount(scanner);
-        } while (PencilGame.pencilCount > 0);
+            Game.printPencilList();
+            Game.printCurrentTurn();
+            Game.updatePencilCount(scanner);
+        } while (Game.pencilCount > 0);
     }
 
     public static class GamePrinter {
         static void askPencilAmount(Scanner scanner) {
             System.out.print("How many pencils would you like to use: ");
-            PencilGame.setPencilCount(scanner);
+            Game.setPencilCount(scanner);
         }
 
         static void askPlayerTurn(Scanner scanner) {
@@ -43,7 +43,7 @@ public class Main {
 
                 try {
                     Players player = Players.valueOf(input.toUpperCase());
-                    PencilGame.currentPlayerIndex = player.ordinal();
+                    Game.currentPlayerIndex = player.ordinal();
                     break;
                 } catch (IllegalArgumentException e) {
                     System.out.println("Choose between 'John' and 'Jack'");
@@ -52,7 +52,7 @@ public class Main {
         }
     }
 
-    public static class PencilGame {
+    public static class Game {
         public static int pencilCount;
         public static int currentPlayerIndex;
         private static final Players[] players = Players.values();
