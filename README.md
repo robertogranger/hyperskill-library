@@ -18,6 +18,7 @@ This repository tracks my progress through the Hyperskill curriculum. Each subfo
 | [Tic-Tac-Toe](tic-tac-toe/TicTacToe.java)                       | Java Basics | Java     | Completed | Two-player console tic-tac-toe with move validation, turn switching, and win/draw detection across rows, columns, and diagonals |
 | [Chuck Norris](chucknorris/Main.java)                           | Java Basics | Java     | Completed | Encodes and decodes text with a run-length-encoded binary cipher; organized into `cipher` and `io` packages with custom exception handling for invalid input |
 | [Battleship](battleship/Main.java)                              | Java Basics | Java     | Completed | Two-player, pass-and-play Battleship with ship placement validation, fog-of-war rendering, and turn-based shooting; split into `field` and `io` packages |
+| [Honest Calculator](honestcalculator/Main.java)                 | Java Basics | Java     | Completed | REPL calculator with a single-value memory slot (`M`), sarcastic commentary on lazy equations, and dedicated exceptions for bad operators and division by zero; split into `io` and `parsing` packages |
 
 **Status legend:** Not Started, In Progress, Completed
 
@@ -60,6 +61,20 @@ hyperskill-projects/
     io/
       ConsoleInteraction.java
       CoordinateParser.java
+  honestcalculator/
+    Main.java
+    Calculator.java
+    Equation.java
+    EquationParts.java
+    Memory.java
+    Operator.java
+    DivisionByZeroException.java
+    io/
+      ConsoleInteraction.java
+    parsing/
+      EquationParser.java
+      InvalidOperatorException.java
+      NumberParser.java
   README.md
 ```
 
