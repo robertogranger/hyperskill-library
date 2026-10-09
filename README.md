@@ -19,6 +19,9 @@ This repository tracks my progress through the Hyperskill curriculum. Each subfo
 | [Chuck Norris](chucknorris/Main.java)                           | Java Basics | Java     | Completed | Encodes and decodes text with a run-length-encoded binary cipher; organized into `cipher` and `io` packages with custom exception handling for invalid input |
 | [Battleship](battleship/Main.java)                              | Java Basics | Java     | Completed | Two-player, pass-and-play Battleship with ship placement validation, fog-of-war rendering, and turn-based shooting; split into `field` and `io` packages |
 | [Honest Calculator](honestcalculator/Main.java)                 | Java Basics | Java     | Completed | REPL calculator with a single-value memory slot (`M`), sarcastic commentary on lazy equations, and dedicated exceptions for bad operators and division by zero; split into `io` and `parsing` packages |
+| [Bulls and Cows](bullscows/Main.java)                           | Java Basics | Java     | Completed | Code-breaking game against a randomly generated secret of unique symbols (up to 36: `0-9`, `a-z`), with configurable length, setup validation, and bull/cow grading via a `Grade` record |
+| [Amazing Numbers](numbers/Main.java)                            | Java Basics | Java     | Completed | Number-property explorer for 12 properties (even, odd, buzz, duck, palindromic, gapful, spy, square, sunny, jumping, happy, sad) with list and search requests, `-property` negation, and detection of mutually exclusive filters |
+| [Readability Score](readability-score/Main.java)                | Java Basics | Java     | Completed | Reads a text file passed as a command-line argument and computes ARI, Flesch-Kincaid, SMOG, and Coleman-Liau readability scores, mapping each to an age bracket and averaging them; split into `io` package |
 
 **Status legend:** Not Started, In Progress, Completed
 
@@ -75,6 +78,30 @@ hyperskill-projects/
       EquationParser.java
       InvalidOperatorException.java
       NumberParser.java
+  bullscows/
+    Main.java
+    Game.java
+    Grade.java
+    io/
+      ConsoleInteraction.java
+  numbers/
+    Main.java
+    NaturalNumber.java
+    Property.java
+    Criterion.java
+    Request.java
+    RequestType.java
+    io/
+      ConsoleInteraction.java
+  readability-score/
+    Main.java
+    Text.java
+    ReadabilityIndex.java
+    AgeBracket.java
+    IndexScore.java
+    io/
+      ConsoleInteraction.java
+      FileInteraction.java
   README.md
 ```
 
